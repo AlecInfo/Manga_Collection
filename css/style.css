@@ -1,0 +1,537 @@
+/* 
+    ------------------
+        ANNIMATION 
+    ------------------ 
+*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* 
+    ------------------
+        BODY 
+    ------------------ 
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* animation: fadeIn 1s; */
+}
+
+
+/* 
+    IMAGE DE FOND
+*/
+[class="pageAccueil"]{
+    background: no-repeat url("../img/arrierePlan/akira.png");
+    background-size: 10%;
+    background-position: 3% 75%;
+}
+
+[class="pageConnection"]{
+    background: no-repeat url("../img/arrierePlan/sunny.png");
+    background-size: 30%;
+    background-position: 80% 80%;
+}
+
+[class="pageInscription"]{
+    background: no-repeat url("../img/arrierePlan/lie.png");
+    background-size: 25%;
+    background-position: 80% 50%;
+}
+
+
+/* 
+    ------------------
+        NAV 
+    ------------------ 
+*/
+
+nav {
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    display: block;
+    top: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav section:first-child li{
+    float: left;
+}
+
+nav section:last-child li{
+    float: right;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 2px;
+    color:white;
+    text-decoration: none;
+}        
+    
+nav a:hover {
+background-color:#999999;
+text-decoration: none;
+color:white;
+}
+
+
+/* 
+    ------------------
+        HEADER 
+    ------------------ 
+*/
+
+header {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-top: 8em;
+}
+
+header h1{ 
+    margin-left: 50px;
+    font-size: 300%;
+    color: #979797;
+}
+
+/* 
+    MESSAGE
+*/
+[class="bienvenu"]{
+    color: rgb(78, 187, 78);
+    display: flex;
+    justify-content: center;
+}
+
+[class="deconnection"]{
+    color:red;
+    display: flex;
+    justify-content: center;
+}
+
+/* 
+    IMAGE AJOUTER
+*/
+header a img{
+    float: right;
+    width: 5%;
+    height: 5%;
+    margin-right: 3%;
+    color: transparent;
+    border: none;
+
+}
+
+/* 
+    ------------------
+        MAIN 
+    ------------------ 
+*/
+
+/* 
+    CLASS ERREUR
+*/
+
+[class="error"]{
+    color: red;
+}
+
+[class="errorInput"]{
+    border-color: red;
+}
+
+main {
+    width: 65%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #666666;
+}
+
+main section:last-child{
+    width: 55%;
+}
+
+/* 
+    FORMULAIRE
+*/
+
+
+main form input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"]{
+    width   : 40%;
+    height: 2em;
+    padding : 0 10px;
+    margin-top: 1%;
+    font    : .9em/1.5em "handwriting", sans-serif;
+    background: none;
+    -webkit-appearance: none;
+}
+
+main form select[id="maisonEdition"]{
+    width   : 42%;
+    height: 2em;
+    padding : 0 10px;
+    margin-top: 1%;
+    font    : .9em/1.5em "handwriting", sans-serif; 
+    border-top: 0.15em solid black;
+    border-left: 0.15em solid black;
+    border-right: 0.15em solid rgb(112, 112, 112);
+    border-bottom: 0.15em solid rgb(112, 112, 112);
+}
+
+main form textarea{
+    width   : 40%;
+    height: 10em;
+    padding : 0 10px;
+    margin-top: 1%;
+    font    : .9em/1.5em "handwriting", sans-serif; 
+    border-top: 0.1em solid black;
+    border-left: 0.1em solid black;
+    border-right: 0.1em solid rgb(112, 112, 112);
+    border-bottom: 0.1em solid rgb(112, 112, 112);
+}
+
+main form input[type="submit"]{
+    width: 10em;
+    height: 3em;
+    font    : .9em/1.5em "handwriting", sans-serif;
+    margin-top: 3em;
+    margin-left: 27%;
+    margin-bottom: 5em;
+    background-color: #777777;
+    color: white;
+    border-radius: 10px;
+}
+
+/* 
+    BARRE DE RECHERCHE
+*/
+
+main form[name="rechercherForm"]{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+main form[name="rechercherForm"] input[type="image"]{
+    width: 3em;
+    height: 3em;
+    margin-top: 0.7em ;
+    margin-left: 0.3em;
+}
+
+main form[name="rechercherForm"] input[type="text"]{
+    border: black solid 0.1em;
+}
+
+/* 
+    TABLE DONNEES
+*/
+
+table[class="tableDonnees"]{
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+table[class="tableDonnees"] td{
+    text-align: center;
+}
+
+table[class="tableDonnees"] th{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+table[class="tableDonnees"] th[id="id"]{
+    width: 2em;
+}
+
+table[class="tableDonnees"] th[id="nom"],th[id="mdp"]{
+    width: 12em;
+}
+
+
+table[class="tableDonnees"] th[id="email"]{
+    width: 20em;
+}
+
+table[class="tableDonnees"] img{
+    width: 4em;
+}
+
+table[class="tableDonnees"] th[id="image"]{
+    width: 5em;
+}
+
+div#right{
+    width: 50%;
+    float: right;
+    margin-bottom: 5em;
+}
+
+img[id="imageCover"]{
+    width: 15em;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+div[id="volumesEdit"]{
+    float: left;
+    background-color: rgb(218, 218, 218);
+
+    margin-right: 0.5em;
+    margin-top: 2em;
+    
+    padding-top: 0.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 0.3em;
+}
+
+div#right img[id="volume"] {
+    width: 5em;
+    height: 7em;
+}
+
+div[id="volumes"]{
+    width: 100%;
+}
+
+div[id="volumesEdit"] p{
+    text-align: center;
+}
+
+div[id="volumesEdit"] img[id="supprimer"]{
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+div[id="volumesEdit"] img[id="editer"]{
+    width: 2.2em;
+    height: 2.2em;
+}
+
+a[id="retour"]{
+    display: block;
+    margin-left: 30%;
+}
+
+table[class="tableDonnees"] th[id="nbVolume"]{
+    width: 8em;
+}
+
+th#maison {
+    width: 10em;
+}
+
+table[class="tableDonnees"] img[id="editer"], th[id="edit"]{
+    width: 4em;
+}
+
+table[class="tableDonnees"] img[id="supprimer"], th[id="supp"]{
+    width: 2.5em;
+}
+
+table[class="tableDonnees"] td[id="titre"]{
+    font-size: 1.3em;
+}
+
+/* 
+    PAGE INDEX
+*/
+
+table[class="tableStat"] {
+    float: right;
+    table-layout: fixed;
+    padding-bottom: 10px;
+}
+
+table[class="tableStat"] td:first-child {
+    padding-right: 1em;
+}
+
+table[class="tableStat"] td:last-child {
+    width: 40px;
+    padding-left: 2em;
+    text-align: center;
+    border-left: 1px solid #DDDDDD;
+}
+
+/* 
+    PAGE RECHERCHE
+*/
+
+div[id="mangaElement"]{
+    width: 100%;
+    height: 6em;    
+    margin-bottom: 4em;
+}
+
+div[id="mangaElement"]:last-child{  
+    margin-bottom: 10em;
+}
+
+h2[id="titre"]{
+    padding-top: 0.5em;
+    margin-left: 8em;
+}
+
+h5[id="maison"], h5[id="auteur"]{
+    margin-left: 15em;
+}
+
+img[name="cover"]{
+    width: 6em;
+    height: 9em;
+    float: left;
+    margin-left: 5em;
+}
+
+img[id="ajouter"]{
+    width: 3em;
+    float: right;
+    margin-right: 10em;
+}
+
+/* 
+    PAGE COMPTE
+*/
+
+main form[name="compte"] input[type="submit"]{
+    width: 10em;
+    font    : .9em/1.5em "handwriting", sans-serif;
+    background-color: #777777;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 26%;
+    margin-bottom: 0em;
+}
+
+main form[name="compte"]{
+    width: 100%;
+    height: 30%;
+
+}
+
+a[id="deconnection"]{
+    display: block;
+    margin-top: 1%;
+    margin-left: 28%;
+}
+
+/* table compte */
+
+table[class="tableCompte"] {
+    table-layout: fixed;
+    padding-bottom: 2em;
+    margin-top: 5em;
+    margin-left: 10em;
+}
+
+table[class="tableCompte"] td:first-child {
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+table[class="tableCompte"] td:last-child {
+    width: 40px;
+    padding-left: 2em;
+    text-align: left;
+    border-left: 1px solid #DDDDDD;
+}
+
+/* 
+    PAGE AJOUT A LA COLLECTION
+*/
+
+main#volumes {
+    margin-bottom: 22em;
+}
+
+main[id="volumes"] div[id="volume"]{
+    float: left;
+    background-color: rgb(218, 218, 218);
+
+    margin-right: 0.5em;
+    margin-top: 2em;
+    
+    padding-top: 0.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 0.3em;
+}
+
+main[id="volumes"] img{
+    width: 8em;
+    height: 12em;
+}
+
+main[id="volumes"] div p{
+    text-align: center;
+}
+
+main[id="volumes"] input[type="submit"] {
+    width: 12em;
+    font    : .9em/1.5em "handwriting", sans-serif;
+    background-color: #777777;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10em;
+    margin-left: 2em;
+    margin-bottom: 10em;
+}
+
+/* 
+    ------------------
+        FOOTER 
+    ------------------ 
+*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #777777;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    color:#FFFFFF;
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
